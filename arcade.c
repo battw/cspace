@@ -172,7 +172,7 @@ static void run() {
     struct Thing* shipsentinel = newsentinel();
     linkthing(newship(ymax - 5, xmax / 2), shipsentinel);
     struct Thing* bulletsentinel = newsentinel();
-    bool running = true, paused = true;
+    bool running = true, paused = false;
     int bulletprob = 20;
     while (running) {
         handleinput(shipsentinel->next, &running, &paused);
@@ -211,3 +211,8 @@ int main() {
     endwin();               // cleanup
     return 0;
 }
+
+
+
+
+
