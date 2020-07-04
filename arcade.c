@@ -207,7 +207,6 @@ int main() {
     halfdelay(2);
 
     run();                  // enter game loop
-
     endwin();               // cleanup
     return 0;
 }
